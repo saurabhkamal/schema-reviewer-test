@@ -1,1 +1,21 @@
-{"databaseName":"test","databaseType":"postgresql","tables":[{"name":"users","columns":[{"name":"id","type":"integer"}]}]}
+{
+  "databaseName": "test",
+  "databaseType": "postgresql",
+  "tables": [
+    {
+      "name": "users",
+      "schemaName": "public",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "isPrimaryKey": true,
+          "isForeignKey": false
+        }
+      ],
+      "indexes": [],
+      "foreignKeys": []
+    }
+  ]
+}
