@@ -1,16 +1,21 @@
 {
-  "databaseName": "volunteer_db",
+  "databaseName": "test",
   "databaseType": "postgresql",
   "tables": [
     {
-      "name": "admins",
+      "name": "users",
       "schemaName": "public",
       "columns": [
-        {"name": "id", "type": "uuid", "nullable": false, "isPrimaryKey": true, "isForeignKey": false},
-        {"name": "email", "type": "character varying(255)", "nullable": false, "isPrimaryKey": false, "isForeignKey": false},
-        {"name": "password", "type": "character varying(255)", "nullable": false, "isPrimaryKey": false, "isForeignKey": false}
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "isPrimaryKey": true,
+          "isForeignKey": false
+        }
       ],
-      "indexes": [{"name": "admins_pkey", "columns": ["id"], "unique": true, "type": "btree"}]
+      "indexes": [],
+      "foreignKeys": []
     }
   ]
 }
